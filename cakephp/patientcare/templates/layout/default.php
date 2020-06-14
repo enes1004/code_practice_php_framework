@@ -42,10 +42,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-nav-title">
             <a href="/"><span>Cake</span>PHP</a>
         </div>
-        <div class="top-nav-links">
-            <a target="_blank" href="https://book.cakephp.org/4/">Documentation</a>
-            <a target="_blank" href="https://api.cakephp.org/4/">API</a>
+        <div class="top-nav-links" style="width:66%">
+          <?= $this->Html->link(__("Patients"),["controller"=>"patients","action"=>"index"]);?>
+          <?= $this->Html->link(__("Appointments"),["controller"=>"appointments","action"=>"index"]);?>
+          <?= $this->Html->link(__("Doctors"),["controller"=>"doctors","action"=>"index"]);?>
+          <?= $this->Html->link(__("Carriers"),["controller"=>"carriers","action"=>"index"]);?>
+          <?= $this->Html->link(__("Invoices"),["controller"=>"invoices","action"=>"index"]);?>
         </div>
+        <div class="top-nav-links">
+          <?= $this->Html->link(__("Manage Users"),["controller"=>"users","action"=>"index"]);?>
+          <?= $this->Html->link(__("Logout"),["controller"=>"users","action"=>"logout"]);?>
+      </div>
     </nav>
     <main class="main">
         <div class="container">

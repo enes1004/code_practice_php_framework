@@ -1,5 +1,3 @@
-# code_practice_php_framework
-code practice backup for php frameworks
 
 mermaid js test
 ```mermaid
